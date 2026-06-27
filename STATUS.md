@@ -45,10 +45,16 @@
 
 ## Fase 1 — Construção: Backlog
 
-### Task 1 — Prompt do Mapeador Agent 🔄 EM ANDAMENTO
+### Task 1 — Prompt do Mapeador Agent ✅ CONCLUÍDA
 **Objetivo:** Construir o system prompt completo do Agente Mapeador de Edital  
-**Critério de conclusão:** Prompt capaz de receber material bruto + objetivos SY0-701 e produzir extrato mapeado com recall ≥ 85% e ruído ≤ 20%  
-**Status:** Iniciando agora
+**Artefato:** `prompts/mapeador_agent_v1.md`  
+**O que foi entregue:**
+- System prompt completo com todos os 26 sub-objetivos do SY0-701 embutidos
+- Algoritmo de mapeamento (scan → extração → cobertura → gap)
+- Formato de saída estruturado (relatório por domínio + mapa de gaps + métricas)
+- Regras invioláveis de honestidade (sem inferência, sem cobertura inventada)
+- Detecção de versão (SY0-601 vs SY0-701)
+**Status:** Aguardando validação (Task 2)
 
 ---
 
@@ -91,6 +97,7 @@
 - Fase 0 concluída e fechada
 - CLAUDE.md gerado (direção do projeto)
 - STATUS.md gerado (este arquivo)
-- Fase 1 aberta, Task 1 iniciada
+- Fase 1 aberta
+- Task 1 concluída: `prompts/mapeador_agent_v1.md` — system prompt completo do Mapeador com todos os 26 sub-objetivos SY0-701 embutidos
 
-**Próxima ação imediata:** Construir o prompt do Agente Mapeador de Edital
+**Próxima ação imediata:** Task 2 — Teste do Mapeador com questões reais (usuário fornece 10-15 questões SY0-701)
